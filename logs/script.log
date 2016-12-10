@@ -1,0 +1,7 @@
+2016-12-10 09:50:37,003 [Thread-9:13100] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-12-10 09:54:32,523 [Thread-22:11624] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-12-10 10:24:42,014 [Thread-3:11644] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager/
+2016-12-10 10:25:33,892 [Thread-11:808] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager//
+2016-12-10 10:26:52,692 [Thread-18:14040] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager//ppp
+2016-12-10 10:26:59,042 [Thread-19:6180] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager//ppp
+2016-12-10 10:29:35,002 [Thread-31:14596] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager/admin/inbox.html

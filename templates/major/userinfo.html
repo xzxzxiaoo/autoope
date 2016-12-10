@@ -1,0 +1,73 @@
+{% extends 'major/public_head.html' %}
+{% load staticfiles %}
+
+
+{% block mainbody %}
+
+<div class="agile3-grids">
+
+<div class="wthree-typo">
+
+
+
+			<div class="page-header">
+				<h3 class="bars">
+                    {% if request.user.first_name %}
+                        {{ request.user.first_name }} 详细信息
+                    {% else %}
+                        {{ request.user.username }} 详细信息
+                    {% endif %}</h3>
+			</div>
+
+			<div class="bs-docs-example">
+				<table class="table">
+
+					<tbody>
+						<tr>
+							<td>登录用户名：</td>
+							<td>{{ request.user.username }}</td>
+						</tr>
+						<tr>
+							<td>姓名：</td>
+							<td>{{ request.user.first_name }}</td>
+
+						</tr>
+						<tr>
+							<td>邮箱：</td>
+							<td>{{ request.user.email }}</td>
+						</tr>
+                        <tr>
+							<td>电话：</td>
+							<td>{{ request.user.user_phone }}</td>
+						</tr>
+                        <tr>
+							<td>用户角色：</td>
+							<td>{{ userRoleName }}</td>
+						</tr>
+                        <tr>
+							<td>用户描述：</td>
+							<td>{{ request.user.user_describe }}</td>
+						</tr>
+                        <tr>
+							<td>注册时间：</td>
+							<td>{{ request.user.user_register_time }}</td>
+						</tr>
+                        <tr>
+							<td>最近一次登录时间：</td>
+							<td>{{ request.user.last_login }}</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+
+			<hr class="bs-docs-separator">
+            <h4 class="page-header">设置</h4>
+
+
+
+		</div>
+	</div>
+
+{% endblock %}
+
