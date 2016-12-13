@@ -5,3 +5,177 @@
 2016-12-10 10:26:52,692 [Thread-18:14040] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager//ppp
 2016-12-10 10:26:59,042 [Thread-19:6180] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager//ppp
 2016-12-10 10:29:35,002 [Thread-31:14596] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager/admin/inbox.html
+2016-12-12 17:47:09,013 [Thread-12:3636] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-12-12 21:26:05,833 [Thread-2:11792] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /register/
+2016-12-12 21:26:10,426 [Thread-4:10884] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /register/
+2016-12-12 21:26:12,046 [Thread-5:10920] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 141, in __getitem__
+    field = self.fields[name]
+KeyError: 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 144, in __getitem__
+    "Key %r not found in '%s'" % (name, self.__class__.__name__))
+KeyError: "Key 'errors' not found in 'RegForm'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python Project\autoope\autoo\views.py", line 138, in register
+    return render(request, 'major/signup.html', locals())
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\defaulttags.py", line 319, in render
+    match = condition.eval(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\defaulttags.py", line 951, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 153, in errors
+    self.full_clean()
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 363, in full_clean
+    self._clean_form()
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 390, in _clean_form
+    cleaned_data = self.clean()
+  File "D:\Python Project\autoope\autoo\forms.py", line 41, in clean
+    pwd1 = self.clean_data['password']
+AttributeError: 'RegForm' object has no attribute 'clean_data'
+2016-12-12 21:26:15,664 [Thread-8:8472] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 141, in __getitem__
+    field = self.fields[name]
+KeyError: 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 144, in __getitem__
+    "Key %r not found in '%s'" % (name, self.__class__.__name__))
+KeyError: "Key 'errors' not found in 'RegForm'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python Project\autoope\autoo\views.py", line 138, in register
+    return render(request, 'major/signup.html', locals())
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\defaulttags.py", line 319, in render
+    match = condition.eval(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\defaulttags.py", line 951, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 153, in errors
+    self.full_clean()
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 363, in full_clean
+    self._clean_form()
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 390, in _clean_form
+    cleaned_data = self.clean()
+  File "D:\Python Project\autoope\autoo\forms.py", line 41, in clean
+    pwd1 = self.clean_data['password']
+AttributeError: 'RegForm' object has no attribute 'clean_data'
+2016-12-12 21:26:24,660 [Thread-10:12044] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 141, in __getitem__
+    field = self.fields[name]
+KeyError: 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 144, in __getitem__
+    "Key %r not found in '%s'" % (name, self.__class__.__name__))
+KeyError: "Key 'errors' not found in 'RegForm'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python Project\autoope\autoo\views.py", line 138, in register
+    return render(request, 'major/signup.html', locals())
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\defaulttags.py", line 319, in render
+    match = condition.eval(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\defaulttags.py", line 951, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 153, in errors
+    self.full_clean()
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 363, in full_clean
+    self._clean_form()
+  File "D:\My Program\Django\django_basic_venv\lib\site-packages\django\forms\forms.py", line 390, in _clean_form
+    cleaned_data = self.clean()
+  File "D:\Python Project\autoope\autoo\forms.py", line 41, in clean
+    pwd1 = self.clean_data['password']
+AttributeError: 'RegForm' object has no attribute 'clean_data'

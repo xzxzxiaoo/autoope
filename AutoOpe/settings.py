@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'autoope',
         'USER': 'root',
         'PASSWORD': '123456',
-        'HOST': '192.168.0.16',
+        'HOST': '192.168.128.131',
         'PORT': '3306',
     }
 }

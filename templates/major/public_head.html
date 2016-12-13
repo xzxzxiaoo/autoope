@@ -201,10 +201,10 @@
 												<div class="user-name">
                                                     {% if request.user.first_name %}
                                                         <p>{{ request.user.first_name }}</p>
-													    <span>{{ userRoleName }}</span>
+													    <span>{{ userRoleName_web }}</span>
                                                     {% else %}
                                                         <p>{{ request.user.username }}</p>
-													    <span>{{ userRoleName }}</span>
+													    <span>{{ userRoleName_web }}</span>
                                                     {% endif %}
 												</div>
 												<i class="fa fa-angle-down"></i>

@@ -1,0 +1,32 @@
+# -*- coding:utf-8 -*-
+2016-12-12 17:47:59,417 [Thread-24:5764] [autoo.views:122] [views:register] [ERROR]- 'user_userloginname'
+2016-12-12 19:40:04,362 [Thread-173:6904] [autoo.views:122] [views:register] [ERROR]- 'user_userloginname'
+2016-12-12 19:55:43,763 [Thread-6:8320] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
+2016-12-12 20:00:03,894 [Thread-2:7116] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
+2016-12-12 20:00:06,597 [Thread-14:8544] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
+2016-12-12 20:00:15,080 [Thread-26:7116] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
+2016-12-12 20:00:17,456 [Thread-28:8704] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
+2016-12-12 20:04:34,224 [Thread-75:9956] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
+2016-12-12 20:08:50,132 [Thread-14:9224] [autoo.views:133] [views:register] [ERROR]- 'password_2' is an invalid keyword argument for this function
+2016-12-12 20:46:51,082 [Thread-12:10796] [autoo.views:141] [views:register] [ERROR]- 'RegForm' object has no attribute 'user_password_1'
+2016-12-12 20:47:26,590 [Thread-14:9988] [autoo.views:141] [views:register] [ERROR]- (1062, "Duplicate entry 'mmmmmmmm' for key 'username'")
+2016-12-12 20:53:33,430 [Thread-2:10436] [autoo.views:141] [views:register] [ERROR]- (1062, "Duplicate entry 'mmmmmmmm' for key 'username'")
+2016-12-12 20:53:47,348 [Thread-14:10204] [autoo.views:141] [views:register] [ERROR]- 'RegForm' object has no attribute 'user_password_1'
+2016-12-12 20:58:09,709 [Thread-2:10100] [autoo.views:137] [views:register] [ERROR]- (1062, "Duplicate entry 'iiiiii' for key 'username'")
+2016-12-12 20:58:28,734 [Thread-14:10976] [autoo.views:137] [views:register] [ERROR]- 'RegForm' object has no attribute 'user_password_1'
+2016-12-12 21:01:23,666 [Thread-26:11544] [autoo.views:137] [views:register] [ERROR]- 'RegForm' object has no attribute 'user_password_1'
+2016-12-12 21:03:35,360 [Thread-2:11680] [autoo.views:137] [views:register] [ERROR]- (1062, "Duplicate entry 'uuuuuu' for key 'username'")
+2016-12-12 21:03:47,133 [Thread-14:11884] [autoo.views:137] [views:register] [ERROR]- 'RegForm' object has no attribute 'password'
+2016-12-12 21:06:16,322 [Thread-2:12268] [autoo.views:137] [views:register] [ERROR]- (1062, "Duplicate entry 'yyyyyy' for key 'username'")
+2016-12-12 21:08:03,320 [Thread-14:11380] [autoo.views:137] [views:register] [ERROR]- 'RegForm' object has no attribute 'username'
+2016-12-12 21:09:24,084 [Thread-2:9284] [autoo.views:137] [views:register] [ERROR]- (1062, "Duplicate entry 'bbbbbb' for key 'username'")
+2016-12-12 21:44:52,439 [Thread-2:13180] [autoo.views:140] [views:register] [ERROR]- all() takes 1 positional argument but 2 were given
+2016-12-12 21:47:39,936 [Thread-33:13296] [autoo.views:140] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
+2016-12-12 21:54:40,623 [Thread-11:13852] [autoo.views:140] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
+2016-12-12 21:55:23,038 [Thread-12:13148] [autoo.views:140] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
+2016-12-12 21:56:03,383 [Thread-13:13604] [autoo.views:140] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
+2016-12-12 21:56:22,751 [Thread-24:12876] [autoo.views:140] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
+2016-12-12 22:05:16,028 [Thread-2:15828] [autoo.views:141] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
+2016-12-12 22:05:23,307 [Thread-13:15940] [autoo.views:141] [views:register] [ERROR]- ['锟斤拷锟斤拷锟筋都为锟斤拷锟斤拷锟斤拷']
+2016-12-12 23:01:03,252 [Thread-2:24708] [autoo.views:141] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-12 23:01:13,735 [Thread-13:25080] [autoo.views:141] [views:register] [ERROR]- ['所有项都为必填项']

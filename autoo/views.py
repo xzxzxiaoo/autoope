@@ -89,16 +89,33 @@ def loginSuccess(request,user_name):
 
 def register(request):
     try:
+        userall = User.objects.all().values('username')
+        print(userall)
+
         if request.method=='POST':
             print("register1")
+
             reg_from = RegForm(request.POST)
+
+            print(reg_from.clean().values())
             if reg_from.is_valid():
+
                 #b = UserAdd()
                 #user = b.add(reg_from.cleaned_data['user_userloginname'], make_password(reg_from.cleaned_data['user_password']))
 
-                user = User.objects.create(username=reg_from.cleaned_data['user_userloginname'],
-                                           password=make_password(reg_from.cleaned_data['user_password_1']),
+                user = User.objects.create(username=reg_from.cleaned_data['username'],
+                                           password=make_password(reg_from.cleaned_data['password']),
                                            user_register_time=time.strftime('%Y-%m-%d', time.localtime(time.time())))
+
+
+
+                print("register1.1")
+
+
+                #print(registerForm.user_password_2)
+                #print(registerForm.usename)
+                print("register1.2")
+
                 user.save()
                 user.backend = 'django.contrib.auth.backends.ModelBackend'
                 print(user)
@@ -107,6 +124,8 @@ def register(request):
                 print("register2")
 
                 return render(request, 'major/index.html',locals())
+                #username_web = request.session.get('username', request.user.username)
+                #userRoleName_web = User.objects.get(username=username_web).user_role_name
             else:
                 print("register3")
                 print(reg_from.errors)
@@ -141,19 +160,19 @@ def manager(request,user_name):
     try:
         print("manager1")
         if request.user.is_authenticated():
-            username = request.session.get('username', request.user.username)
-            userRoleName = User.objects.get(username=username).user_role_name
+            username_web = request.session.get('username', request.user.username)
+            userRoleName_web = User.objects.get(username=username_web).user_role_name
             user_name = request.user.username
 
 
             #userrole = User.objects.get(user_role_name_id=1).username
             #role = Role.objects.get(role_name=1)
-            print(userRoleName)
+            print(userRoleName_web)
             #print(role)
 
             print("manager2")
 
-            print(username)
+            print(username_web)
             return render(request, 'major/index.html', locals())
 
     except Exception as e:
@@ -162,8 +181,8 @@ def manager(request,user_name):
 
 def usermsg(request):
     try:
-        username = request.session.get('username', request.user.username)
-        userRoleName = User.objects.get(username=username).user_role_name
+        username_web = request.session.get('username', request.user.username)
+        userRoleName_web = User.objects.get(username=username_web).user_role_name
         user_list = User.objects.all()
         paginator = Paginator(user_list,5)
         try:
@@ -180,8 +199,8 @@ def usermsg(request):
 
 def userinfo(request):
     try:
-        username = request.session.get('username', request.user.username)
-        userRoleName = User.objects.get(username=username).user_role_name
+        username_web = request.session.get('username', request.user.username)
+        userRoleName_web = User.objects.get(username=username_web).user_role_name
 
         print("首页")
     except Exception as e:
@@ -190,8 +209,8 @@ def userinfo(request):
 
 def usersetting(request):
     try:
-        username = request.session.get('username', request.user.username)
-        userRoleName = User.objects.get(username=username).user_role_name
+        username_web = request.session.get('username', request.user.username)
+        userRoleName_web = User.objects.get(username=username_web).user_role_name
 
 
         print("首页")
