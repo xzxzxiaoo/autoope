@@ -45,6 +45,7 @@ def userlogin(request):
                     print("login1.3")
                     user.backend = 'django.contrib.auth.backends.ModelBackend'
                     login(request, user)
+                    #return render(request, 'major/index.html', locals())
                 else:
                     print("login1.4")
                     return render(request, 'major/failure.html', locals())
@@ -89,31 +90,29 @@ def loginSuccess(request,user_name):
 
 def register(request):
     try:
-        userall = User.objects.all().values('username')
-        print(userall)
-
         if request.method=='POST':
             print("register1")
+
 
             reg_from = RegForm(request.POST)
 
             print(reg_from.clean().values())
             if reg_from.is_valid():
 
+
                 #b = UserAdd()
                 #user = b.add(reg_from.cleaned_data['user_userloginname'], make_password(reg_from.cleaned_data['user_password']))
 
                 user = User.objects.create(username=reg_from.cleaned_data['username'],
-                                           password=make_password(reg_from.cleaned_data['password']),
-                                           user_register_time=time.strftime('%Y-%m-%d', time.localtime(time.time())))
+                                               password=make_password(reg_from.cleaned_data['password']),
+                                               email=reg_from.cleaned_data['email'],
+                                               user_register_time=time.strftime('%Y-%m-%d', time.localtime(time.time())))
 
 
 
                 print("register1.1")
-
-
-                #print(registerForm.user_password_2)
-                #print(registerForm.usename)
+                    #print(registerForm.user_password_2)
+                    #print(registerForm.usename)
                 print("register1.2")
 
                 user.save()
@@ -122,10 +121,13 @@ def register(request):
 
                 login(request, user)
                 print("register2")
+                #req = HttpResponseRedirect('manager/%s' % (request.user.username))
+                #return req
+                return render(request, 'major/loginsuccess.html', locals())
 
-                return render(request, 'major/index.html',locals())
-                #username_web = request.session.get('username', request.user.username)
-                #userRoleName_web = User.objects.get(username=username_web).user_role_name
+
+                    #username_web = request.session.get('username', request.user.username)
+                    #userRoleName_web = User.objects.get(username=username_web).user_role_name
             else:
                 print("register3")
                 print(reg_from.errors)
@@ -174,10 +176,13 @@ def manager(request,user_name):
 
             print(username_web)
             return render(request, 'major/index.html', locals())
+        else:
+            return render(request, 'major/failure.html', locals())
+
 
     except Exception as e:
         logger.error(e)
-    return render(request,'major/needlogin.html',locals())
+    return render(request,'major/index.html',locals())
 
 def usermsg(request):
     try:

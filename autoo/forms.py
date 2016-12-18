@@ -6,9 +6,9 @@ from django.forms.utils import ErrorDict
 from django.core.exceptions import ValidationError
 
 class RegForm(forms.Form):
-    def validate_password(value):
-        if value == "123456":
-            raise ValidationError(u'%s is private,dont input' % value)
+    # def validate_password(value):
+    #     if value == "123456":
+    #         raise ValidationError(u'%s is private,dont input' % value)
 
     username = forms.CharField(
         label = ("登录账号"),
@@ -25,8 +25,8 @@ class RegForm(forms.Form):
         widget=forms.PasswordInput(
         attrs={"placeholder":"password","required":"required","class":"password","name":"password"},),
         max_length=40,min_length=6,
-        error_messages={"required":"password不能为空",},
-        validators=[validate_password])
+        error_messages={"required":"password不能为空",},)
+        #validators=[validate_password])
 
     user_password_2 = forms.CharField(
         label=("确认密码"),
@@ -34,6 +34,12 @@ class RegForm(forms.Form):
         attrs={"placeholder": "password confirm", "required": "required", "class": "password", "name": "password"}),
         max_length=40, min_length=6,
         error_messages={"required": "password不能为空"})
+
+    email = forms.EmailField(
+        label=("email"),
+        widget=forms.TextInput(
+            attrs={"placeholder": "email", "required": "required", "class": "name", "name": "email"}),
+        error_messages={"required": "email不能为空", "invalid":"邮箱格式错误",},)
 
     def clean_user(self):
         user = self.cleaned_data.get('username')
@@ -44,12 +50,21 @@ class RegForm(forms.Form):
     def clean(self):
         userall = User.objects.all()
         if not self.is_valid():
+            print("")
             raise forms.ValidationError(u"所有项都为必填项")
         elif self.cleaned_data['username'] in User.objects.all().values('username'):
+            print("wrong message1")
             raise forms.ValidationError(u"form表单用户已存在")
         elif self.cleaned_data['password'] != self.cleaned_data['user_password_2']:
+            print("wrong message2")
+            self._errors['password'] = self.error_class([u"两次输入的新密码不一样!"])
             raise forms.ValidationError(u"两次输入的新密码不一样")
+        # elif self.cleaned_data['email'] :
+        #     print("wrong message3")
+        #     self._errors['email'] = self.error_class([u"邮箱格式不正确"])
+        #     raise forms.ValidationError(u"邮箱格式不正确")
         else:
+            print("wrong message4")
             cleaned_data = super(RegForm, self).clean()
         return cleaned_data
 

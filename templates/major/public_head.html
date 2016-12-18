@@ -229,7 +229,7 @@
 				</div>
 <!--heder end here-->
 		<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a> <i class="fa fa-angle-right"></i></li>
+                <li class="breadcrumb-item"><a href="{{ INEDX_PAGE }}/manager/{{ request.user.username }}">主页</a> <i class="fa fa-angle-right"></i></li>
             </ol>
 {% block mainbody %}{% endblock %}
 <!-- script-for sticky-nav -->
@@ -289,7 +289,16 @@
 {#											<li id="menu-academico-avaliacoes" ><a href="grid.html">Grids</a></li>#}
 {#										  </ul>#}
 {#										</li>#}
-									 <li><a href='{{ MANAGER_DIR }}{{ request.user.username }}/usermsg'><i class="fa fa-users"></i>  <span>人员表</span><div class="clearfix"></div></a></li>
+                                        {% ifequal request.user.user_role_name_id 1 %}
+                                            <li><a href='{{ MANAGER_DIR }}{{ request.user.username }}/usermsg'><i class="fa fa-users"></i>  <span>人员表</span><div class="clearfix"></div></a></li>
+                                            <li><a href='{{ MANAGER_DIR }}{{ request.user.username }}/usermsg'><i class="fa fa-users"></i>  <span>人员管理</span><div class="clearfix"></div></a></li>
+
+                                        {% endifequal %}
+                                    {% ifequal request.user.user_role_name_id 2 %}
+                                            <li><a href='{{ MANAGER_DIR }}{{ request.user.username }}/usermsg'><i class="fa fa-users"></i>  <span>人员表</span><div class="clearfix"></div></a></li>
+                                            <li><a href='{{ MANAGER_DIR }}{{ request.user.username }}/usermsg'><i class="fa fa-users"></i>  <span>人员管理</span><div class="clearfix"></div></a></li>
+
+                                        {% endifequal %}
 
 
                                         <li><a href="{{ MANAGER_DIR }}{{ request.user.username }}/userinfo"><i class="fa fa-user"></i><span>用户管理</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
@@ -313,10 +322,15 @@
 {#											<li id="menu-academico-boletim" ><a href="calendar.html">Calendar</a></li>#}
 											<li id="menu-academico-avaliacoes" ><a href='{{ INEDX_PAGE }}'>更换登录用户</a></li>
 											<li id="menu-academico-avaliacoes" ><a href="{{ INEDX_PAGE }}/register">注册</a></li>
-
-
 										  </ul>
 									 </li>
+                                        <li><a href="#"><i class="fa fa-check-square-o nav_icon"></i><span>项目</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+									  <ul>
+										<li><a href="input.html"> 项目信息</a></li>
+										<li><a href="validation.html">项目管理</a></li>
+									</ul>
+									</li>
+
                                         <li><a href="maps.html"><i class="fa fa-map-marker" aria-hidden="true"></i>  <span>Maps</span><div class="clearfix"></div></a></li>
 									<li><a href="#"><i class="fa fa-check-square-o nav_icon"></i><span>Forms</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
 									  <ul>

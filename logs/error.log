@@ -1,32 +1,50 @@
-# -*- coding:utf-8 -*-
-2016-12-12 17:47:59,417 [Thread-24:5764] [autoo.views:122] [views:register] [ERROR]- 'user_userloginname'
-2016-12-12 19:40:04,362 [Thread-173:6904] [autoo.views:122] [views:register] [ERROR]- 'user_userloginname'
-2016-12-12 19:55:43,763 [Thread-6:8320] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
-2016-12-12 20:00:03,894 [Thread-2:7116] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
-2016-12-12 20:00:06,597 [Thread-14:8544] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
-2016-12-12 20:00:15,080 [Thread-26:7116] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
-2016-12-12 20:00:17,456 [Thread-28:8704] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
-2016-12-12 20:04:34,224 [Thread-75:9956] [autoo.views:131] [views:register] [ERROR]- User matching query does not exist.
-2016-12-12 20:08:50,132 [Thread-14:9224] [autoo.views:133] [views:register] [ERROR]- 'password_2' is an invalid keyword argument for this function
-2016-12-12 20:46:51,082 [Thread-12:10796] [autoo.views:141] [views:register] [ERROR]- 'RegForm' object has no attribute 'user_password_1'
-2016-12-12 20:47:26,590 [Thread-14:9988] [autoo.views:141] [views:register] [ERROR]- (1062, "Duplicate entry 'mmmmmmmm' for key 'username'")
-2016-12-12 20:53:33,430 [Thread-2:10436] [autoo.views:141] [views:register] [ERROR]- (1062, "Duplicate entry 'mmmmmmmm' for key 'username'")
-2016-12-12 20:53:47,348 [Thread-14:10204] [autoo.views:141] [views:register] [ERROR]- 'RegForm' object has no attribute 'user_password_1'
-2016-12-12 20:58:09,709 [Thread-2:10100] [autoo.views:137] [views:register] [ERROR]- (1062, "Duplicate entry 'iiiiii' for key 'username'")
-2016-12-12 20:58:28,734 [Thread-14:10976] [autoo.views:137] [views:register] [ERROR]- 'RegForm' object has no attribute 'user_password_1'
-2016-12-12 21:01:23,666 [Thread-26:11544] [autoo.views:137] [views:register] [ERROR]- 'RegForm' object has no attribute 'user_password_1'
-2016-12-12 21:03:35,360 [Thread-2:11680] [autoo.views:137] [views:register] [ERROR]- (1062, "Duplicate entry 'uuuuuu' for key 'username'")
-2016-12-12 21:03:47,133 [Thread-14:11884] [autoo.views:137] [views:register] [ERROR]- 'RegForm' object has no attribute 'password'
-2016-12-12 21:06:16,322 [Thread-2:12268] [autoo.views:137] [views:register] [ERROR]- (1062, "Duplicate entry 'yyyyyy' for key 'username'")
-2016-12-12 21:08:03,320 [Thread-14:11380] [autoo.views:137] [views:register] [ERROR]- 'RegForm' object has no attribute 'username'
-2016-12-12 21:09:24,084 [Thread-2:9284] [autoo.views:137] [views:register] [ERROR]- (1062, "Duplicate entry 'bbbbbb' for key 'username'")
-2016-12-12 21:44:52,439 [Thread-2:13180] [autoo.views:140] [views:register] [ERROR]- all() takes 1 positional argument but 2 were given
-2016-12-12 21:47:39,936 [Thread-33:13296] [autoo.views:140] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
-2016-12-12 21:54:40,623 [Thread-11:13852] [autoo.views:140] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
-2016-12-12 21:55:23,038 [Thread-12:13148] [autoo.views:140] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
-2016-12-12 21:56:03,383 [Thread-13:13604] [autoo.views:140] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
-2016-12-12 21:56:22,751 [Thread-24:12876] [autoo.views:140] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
-2016-12-12 22:05:16,028 [Thread-2:15828] [autoo.views:141] [views:register] [ERROR]- (1062, "Duplicate entry 'vvvvvv' for key 'username'")
-2016-12-12 22:05:23,307 [Thread-13:15940] [autoo.views:141] [views:register] [ERROR]- ['锟斤拷锟斤拷锟筋都为锟斤拷锟斤拷锟斤拷']
-2016-12-12 23:01:03,252 [Thread-2:24708] [autoo.views:141] [views:register] [ERROR]- ['所有项都为必填项']
-2016-12-12 23:01:13,735 [Thread-13:25080] [autoo.views:141] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:31:43,037 [Thread-15:17072] [autoo.views:139] [views:register] [ERROR]- local variable 'cleaned_data' referenced before assignment
+2016-12-14 00:32:31,066 [Thread-16:16184] [autoo.views:139] [views:register] [ERROR]- local variable 'cleaned_data' referenced before assignment
+2016-12-14 00:32:45,908 [Thread-17:14132] [autoo.views:139] [views:register] [ERROR]- local variable 'cleaned_data' referenced before assignment
+2016-12-14 00:32:55,190 [Thread-18:15328] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:34:59,042 [Thread-26:12072] [autoo.views:139] [views:register] [ERROR]- local variable 'cleaned_data' referenced before assignment
+2016-12-14 00:35:53,756 [Thread-2:7248] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:36:08,978 [Thread-3:16204] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:37:30,029 [Thread-8:15820] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:38:18,718 [Thread-14:12212] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:38:28,877 [Thread-15:17168] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:38:58,100 [Thread-16:16376] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:39:15,857 [Thread-22:15112] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:39:37,057 [Thread-23:15944] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:39:45,232 [Thread-24:15956] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 00:41:03,085 [Thread-2:13548] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 01:05:47,035 [Thread-2:16756] [autoo.views:138] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 01:07:52,896 [Thread-2:18412] [autoo.views:138] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 01:08:09,298 [Thread-4:9160] [autoo.views:138] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 01:08:22,945 [Thread-2:14264] [autoo.views:138] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 01:08:37,264 [Thread-2:15328] [autoo.views:138] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 01:09:03,110 [Thread-3:18140] [autoo.views:138] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-14 01:09:55,428 [Thread-4:18300] [autoo.views:138] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:15:19,638 [Thread-2:15724] [autoo.views:143] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:15:26,349 [Thread-3:14480] [autoo.views:143] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:16:41,625 [Thread-2:17392] [autoo.views:144] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:16:50,847 [Thread-3:17736] [autoo.views:144] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:20:19,920 [Thread-2:17764] [autoo.views:145] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:20:27,121 [Thread-3:18080] [autoo.views:145] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:21:19,464 [Thread-2:13096] [autoo.views:146] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:21:25,715 [Thread-3:16072] [autoo.views:146] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:23:27,993 [Thread-2:16936] [autoo.views:147] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:23:51,826 [Thread-3:13272] [autoo.views:147] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:29:41,363 [Thread-2:14996] [autoo.views:149] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-14 01:29:46,911 [Thread-3:17480] [autoo.views:149] [views:register] [ERROR]- (1062, "Duplicate entry 'tttttt' for key 'username'")
+2016-12-17 23:58:07,250 [Thread-101:452] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-17 23:58:19,239 [Thread-102:16960] [autoo.views:139] [views:register] [ERROR]- ['所有项都为必填项']
+2016-12-17 23:58:30,596 [Thread-103:14160] [autoo.views:139] [views:register] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 00:00:45,297 [Thread-107:16656] [autoo.views:177] [views:manager] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 00:00:55,302 [Thread-111:9724] [autoo.views:177] [views:manager] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 00:02:29,760 [Thread-5:736] [autoo.views:177] [views:manager] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 00:03:31,315 [Thread-9:15120] [autoo.views:177] [views:manager] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 00:04:56,856 [Thread-3:13464] [autoo.views:69] [views:userlogin] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 00:05:07,658 [Thread-4:15620] [autoo.views:69] [views:userlogin] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 00:05:30,609 [Thread-12:9228] [autoo.views:69] [views:userlogin] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 00:05:54,865 [Thread-15:9724] [autoo.views:69] [views:userlogin] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 00:06:21,651 [Thread-16:16976] [autoo.views:69] [views:userlogin] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 00:08:02,706 [Thread-13:16200] [autoo.views:178] [views:manager] [ERROR]- Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 09:57:49,745 [Thread-14:8052] [autoo.views:143] [views:register] [ERROR]- manager() missing 2 required positional arguments: 'request' and 'user_name'
+2016-12-18 09:59:06,824 [Thread-15:7808] [autoo.views:143] [views:register] [ERROR]- manager() missing 2 required positional arguments: 'request' and 'user_name'
+2016-12-18 10:20:43,562 [Thread-8:12568] [autoo.views:143] [views:register] [ERROR]- ['所有项都为必填项']

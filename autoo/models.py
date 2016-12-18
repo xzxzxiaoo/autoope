@@ -138,12 +138,24 @@ class ProjectforUser(models.Model):
         return self.name
 
 
+class Money(models.Model):
+    price_name = models.CharField(max_length=30,null=True,unique=False,verbose_name='价格名称')
+    price = models.IntegerField(null=True,unique=True,verbose_name='价格')
+
+    class Meta:
+        verbose_name = '项目所属管理人员'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.name
+
 class Server(models.Model):
     server_name = models.CharField(max_length=30,null=True,unique=False,verbose_name='服务器名称')
     server_ip = models.GenericIPAddressField(null=False,unique=True,verbose_name='服务器IP地址')
     server_port = models.IntegerField(null=False,unique=False,verbose_name='服务器端口')
     server_login_username = models.CharField(max_length=30,null=True,unique=False,verbose_name='服务器登录名')
     server_login_password = models.CharField(max_length=30, null=True, unique=False, verbose_name='服务器密码')
+    server_price = models.IntegerField(null=True,unique=True,verbose_name='服务器价格')
     server_location = models.ForeignKey(LocationServer,null=True, on_delete=models.CASCADE,verbose_name='项目位置')
     server_project= models.ForeignKey(Project,null=True, on_delete=models.CASCADE,verbose_name='项目')
 

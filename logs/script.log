@@ -179,3 +179,135 @@ Traceback (most recent call last):
   File "D:\Python Project\autoope\autoo\forms.py", line 41, in clean
     pwd1 = self.clean_data['password']
 AttributeError: 'RegForm' object has no attribute 'clean_data'
+2016-12-13 21:34:57,741 [Thread-6:16340] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-12-14 00:05:05,658 [Thread-26:9584] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager/
+2016-12-14 00:25:18,105 [Thread-2:14596] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /register/
+Traceback (most recent call last):
+  File "G:\python test\django_basic_venv\lib\site-packages\django\forms\forms.py", line 141, in __getitem__
+    field = self.fields[name]
+KeyError: 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "G:\python test\django_basic_venv\lib\site-packages\django\forms\forms.py", line 144, in __getitem__
+    "Key %r not found in '%s'" % (name, self.__class__.__name__))
+KeyError: "Key 'errors' not found in 'RegForm'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\python test\django_basic_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\python test\AutoOpe\autoo\views.py", line 141, in register
+    return render(request, 'major/signup.html', locals())
+  File "G:\python test\django_basic_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\defaulttags.py", line 319, in render
+    match = condition.eval(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\defaulttags.py", line 951, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\forms\forms.py", line 153, in errors
+    self.full_clean()
+  File "G:\python test\django_basic_venv\lib\site-packages\django\forms\forms.py", line 363, in full_clean
+    self._clean_form()
+  File "G:\python test\django_basic_venv\lib\site-packages\django\forms\forms.py", line 390, in _clean_form
+    cleaned_data = self.clean()
+  File "G:\python test\AutoOpe\autoo\forms.py", line 65, in clean
+    return cleaned_data
+UnboundLocalError: local variable 'cleaned_data' referenced before assignment
+2016-12-14 00:37:03,316 [Thread-4:17356] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /register/
+2016-12-17 18:56:42,990 [Thread-11:480] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-12-17 20:31:47,966 [Thread-41:16152] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager/
+2016-12-18 00:05:12,253 [Thread-5:15176] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /
+2016-12-18 00:05:15,323 [Thread-6:14776] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /
+2016-12-18 00:05:21,780 [Thread-7:16324] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/
+2016-12-18 00:07:38,741 [Thread-2:15772] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /
+2016-12-18 00:07:41,331 [Thread-3:16324] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /
+2016-12-18 00:07:56,762 [Thread-10:12772] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-12-18 00:08:02,712 [Thread-13:16200] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /manager/xzxzxz/
+Traceback (most recent call last):
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compile_func = self.tags[command]
+KeyError: 'elseif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\python test\django_basic_venv\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\python test\AutoOpe\autoo\views.py", line 179, in manager
+    return render(request,'major/index.html',locals())
+  File "G:\python test\django_basic_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    compiled_parent = self.get_parent(context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\loader_tags.py", line 148, in get_parent
+    return self.find_template(parent, context)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\loader_tags.py", line 128, in find_template
+    template_name, skip=history,
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\loaders\base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 516, in parse
+    raise self.error(token, e)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 514, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\defaulttags.py", line 930, in ifequal
+    return do_ifequal(parser, token, False)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\defaulttags.py", line 901, in do_ifequal
+    nodelist_true = parser.parse(('else', end_tag))
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "G:\python test\django_basic_venv\lib\site-packages\django\template\base.py", line 566, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until]),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 295: 'elseif', expected 'else' or 'endifequal'. Did you forget to register or load this tag?
+2016-12-18 09:57:23,785 [Thread-12:7884] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-12-18 10:16:53,128 [Thread-8:12308] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager//uouououo
+2016-12-18 10:17:01,704 [Thread-9:12360] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /register/
+2016-12-18 10:18:21,092 [Thread-3:2184] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager//uouououo
+2016-12-18 10:18:24,202 [Thread-5:12172] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager//uouououo
+2016-12-18 10:18:41,220 [Thread-11:12296] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager//uouououo
+2016-12-18 10:18:41,251 [Thread-12:12692] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-12-18 10:19:29,192 [Thread-30:7424] [django.request:182] [base:get_response] [WARNING]- Not Found: /manager/

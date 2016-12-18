@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<title>{{ SITE_NAME }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Bootstrap Core CSS -->
+<link href="{% static 'major/css/bootstrap.min.css '%}" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="{% static 'major/css/style.css '%}" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="{% static 'major/css/morris.css '%}" type="text/css"/>
+<!-- Graph CSS -->
+<link href="{% static 'major/css/font-awesome.css '%}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'major/css/jquery-ui.css'%}">
+<!-- jQuery -->
+<script src="{% static 'major/js/jquery-2.1.4.min.js '%}"></script>
+<!-- //jQuery -->
+<link href='{% static 'major/css/font-self.css' %}' rel='stylesheet' type='text/css'/>
+<link href='{% static 'major/css/font-self2.css' %}' rel='stylesheet' type='text/css'>
+<!-- lined-icons -->
+<link rel="stylesheet" href="{% static 'major/css/icon-font.min.css '%}" type='text/css' />
+<!-- //lined-icons -->
+    <script>window.location.href='{{ MANAGER_DIR }}{{ request.user.username }}';
+    </script>
+</head> 
+<body>
+	<div class="main-wthree">
+	<div class="container">
+	<div class="sin-w3-agile">
+		<h2>登录成功即将跳转页面</h2>
+
+		<div class="back">
+						<a href="{{ MANAGER_DIR }}{{ request.user.username }}">手动登录</a>
+				</div>
+				<div class="footer">
+
+				</div>
+	</div>
+	</div>
+	</div>
+</body>
+</html>
